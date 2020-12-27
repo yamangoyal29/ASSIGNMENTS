@@ -1,0 +1,115 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled7.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyO1iK0KTn7oIfosuZ2rTXSA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yamangoyal29/ASSIGNMENTS/blob/main/%20assignment%20exception%20handling%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "sWoi4lYWnBRZ"
+      },
+      "source": [
+        "assignment exception handling question 1\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N4O1s-Ork_Pu",
+        "outputId": "de9238fd-c57e-4818-f7f5-0ce6a00be876"
+      },
+      "source": [
+        "def div():\r\n",
+        "    try:\r\n",
+        "        a=5\r\n",
+        "        b=0\r\n",
+        "        c=a/b\r\n",
+        "    except Exception as e:\r\n",
+        "        print(\"there is an error:\",e)\r\n",
+        "    \r\n",
+        "div()   "
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "there is an error: division by zero\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "i9I_EKqhpy5U"
+      },
+      "source": [
+        "\r\n",
+        "assignment exception handling question 2\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OHbaHWVLnKc4",
+        "outputId": "f06ee36c-b68f-4475-a075-7d1dde1640d7"
+      },
+      "source": [
+        "subjects=[\"americans\",\"indians\"]\r\n",
+        "verb=[\"play\",\"watch\"]\r\n",
+        "obj=[\"baseball\",\"cricket\"]\r\n",
+        "for i in subjects:\r\n",
+        "    for j in verb:\r\n",
+        "        for k in obj:\r\n",
+        "            print(i,j,k)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "americans play baseball\n",
+            "americans play cricket\n",
+            "americans watch baseball\n",
+            "americans watch cricket\n",
+            "indians play baseball\n",
+            "indians play cricket\n",
+            "indians watch baseball\n",
+            "indians watch cricket\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
